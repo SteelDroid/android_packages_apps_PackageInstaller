@@ -9,7 +9,8 @@
     <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
-    <application android:label="@string/app_name"> 
+
+    <application android:label="@string/app_name">
         <activity android:name=".PackageInstallerActivity"
                 android:configChanges="orientation|keyboardHidden"
                 android:theme="@style/TallTitleBarTheme">
@@ -21,10 +22,12 @@
                 <data android:mimeType="application/vnd.android.package-archive" />
             </intent-filter>
         </activity>
+
         <activity android:name=".InstallAppProgress"
                 android:configChanges="orientation|keyboardHidden"
                 android:theme="@style/TallTitleBarTheme">
         </activity>
+
         <activity android:name=".UninstallerActivity"
                 android:configChanges="orientation|keyboardHidden"
                 android:theme="@style/TallTitleBarTheme">
@@ -35,9 +38,10 @@
                 <data android:scheme="package" />
             </intent-filter>
         </activity>
+
         <activity android:name=".UninstallAppProgress"
                 android:configChanges="orientation|keyboardHidden"
                 android:theme="@style/TallTitleBarTheme">
         </activity>
     </application>
-</manifest> 
+</manifest>
